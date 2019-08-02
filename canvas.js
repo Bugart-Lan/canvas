@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function draw_point(x, y, connect) {
-        if ((x <= 55 && y <= 305) || (x <= 90 && y > 345 && y < 550)) {
+        if ((x <= 55 && y <= 305) || (x <= 90 && y > 345 && y < 455)) {
             draw = false
             return
         }

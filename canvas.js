@@ -69,14 +69,14 @@ document.addEventListener('DOMContentLoaded', () => {
                             .attr('y1', last_point.attr('cy'))
                             .attr('x2', x)
                             .attr('y2', y)
-                            .attr('stroke-width', stroke * 2)
+                            .attr('stroke-width', stroke)
                             .style('stroke', color)
             lines.push(line)
         }
         const point = svg.append('circle')
                          .attr('cx', x)
                          .attr('cy', y)
-                         .attr('r', stroke)
+                         .attr('r', stroke / 2)
                          .style('fill', color)
         points.push(point)
     }
